@@ -1,39 +1,134 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 
 }
 
 body {
-    width: 100ww;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
     height: 100vh;
     background-image: url(images/backgraund.png);
     background-size: cover;
     background-position: center;
     
 }
-.wrapper {
-    background-image:linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
-    width: 100ww;
-    height: 100vh;
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 50px 167px 0;
     display: flex;
-    flex-direction: row;
-    
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-.right-menu-bar {
-    order: -1;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+    width: 100vw;
+    height: 100vh; 
+    }
+
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0px 10px;
+
+}
+.center-menu-bar a:first-child {
+    font-weight: bold;
 }
 
-.selected-language,
+.header-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selected-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-right: 35px;
+}
+
+.icon-usa-flag {
+    padding-right: 15px;
+}
+
 .button-login {
-     display: flex;
-    justify-content: right;
-}
-
-.button-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: transparent;
     width: 100px;
     height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all .3s ease;
+}
+
+.button-login:hover {
+    color: #EE3D1B;
+     background-color:#ffffff;
+ }
+
+ .button-login:focus {
+     outline: 0;
+ }
+
+ .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .desc {  
+     color: #ffffff;
+     font-size: 72px;
+     line-height: 86px;
+     display: flex;
+    
+ } 
+
+.text {
+    margin: 39px 0;
+    max-width: 540px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+
+}
+
+.button-sign-up {
+    font-weight: 600;
+    font-size: 14px;
+    transition:all .3s ease;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    color: #ED4C5C;
+    background-color: #ffffff;
+    width: 160px;
+    height: 50px;
+}
+
+.button-sign-up:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color:#ffffff
 }
