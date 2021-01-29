@@ -22,7 +22,7 @@ body {
     max-width: 1440px;
     padding: 50px 167px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -44,9 +44,17 @@ body {
     padding: 0px 10px;
 
 }
-.center-menu-bar a:first-child {
+
+.overview-link {
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 17px;
     font-weight: bold;
+    text-decoration: none;
 }
+
+
 
 .header-buttons {
     display: flex;
@@ -106,10 +114,13 @@ body {
  } 
 
 .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 39px 0;
     max-width: 540px;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 24px;
     line-height: 150%;
 
